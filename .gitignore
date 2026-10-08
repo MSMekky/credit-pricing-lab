@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+.DS_Store
+# Econometrica supplement: download it yourself (see data/README.md)
+data/raw/kz_observing_unobservables_ecma09.dta

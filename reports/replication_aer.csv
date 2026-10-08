@@ -1,0 +1,7 @@
+estimate,ours,ours_se,ours_n,published,published_se,published_n,match
+"T3 c1 applied, offers at or below standard (probit ME)",-0.0028884455723942196,0.00046722915588503453,53178,-0.00289,0.00047,53178,True
+"T4 c1 loan size, unconditional (OLS)",-4.368039450642975,1.093129950812641,31231,-4.368,1.093,31231,True
+"T4 c3 loan size, borrowers (OLS)",-25.876199273189652,12.993911697714159,2325,-25.876,12.994,2325,True
+T5 c1 gross interest revenue (OLS),2.552678835208061,0.4376368642421041,31231,2.553,0.438,31231,True
+"T5 c2 average past due, borrowers (OLS)",12.16073484035568,3.523081952078686,2325,12.161,3.523,2325,True
+"T3 c3 applied, offers above standard (probit ME)",-0.017231795852386544,0.001599075186619611,632,-0.01723,0.0016,632,True

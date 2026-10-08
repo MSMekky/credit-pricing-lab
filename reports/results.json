@@ -1,0 +1,393 @@
+{
+  "sample": {
+    "offers": 53810,
+    "pricing_sample": 31231,
+    "branches": 108,
+    "risk_mix": {
+      "HIGH": 0.7831641638115975,
+      "LOW": 0.12477986615862445,
+      "MEDIUM": 0.09205597002977811
+    }
+  },
+  "replication_all_match": true,
+  "replication": [
+    {
+      "estimate": "T3 c1 applied, offers at or below standard (probit ME)",
+      "ours": -0.0028884455723942196,
+      "ours_se": 0.00046722915588503453,
+      "ours_n": 53178,
+      "published": -0.00289,
+      "published_se": 0.00047,
+      "published_n": 53178,
+      "match": true
+    },
+    {
+      "estimate": "T4 c1 loan size, unconditional (OLS)",
+      "ours": -4.368039450642975,
+      "ours_se": 1.093129950812641,
+      "ours_n": 31231,
+      "published": -4.368,
+      "published_se": 1.093,
+      "published_n": 31231,
+      "match": true
+    },
+    {
+      "estimate": "T4 c3 loan size, borrowers (OLS)",
+      "ours": -25.876199273189652,
+      "ours_se": 12.993911697714159,
+      "ours_n": 2325,
+      "published": -25.876,
+      "published_se": 12.994,
+      "published_n": 2325,
+      "match": true
+    },
+    {
+      "estimate": "T5 c1 gross interest revenue (OLS)",
+      "ours": 2.552678835208061,
+      "ours_se": 0.4376368642421041,
+      "ours_n": 31231,
+      "published": 2.553,
+      "published_se": 0.438,
+      "published_n": 31231,
+      "match": true
+    },
+    {
+      "estimate": "T5 c2 average past due, borrowers (OLS)",
+      "ours": 12.16073484035568,
+      "ours_se": 3.523081952078686,
+      "ours_n": 2325,
+      "published": 12.161,
+      "published_se": 3.523,
+      "published_n": 2325,
+      "match": true
+    },
+    {
+      "estimate": "T3 c3 applied, offers above standard (probit ME)",
+      "ours": -0.017231795852386544,
+      "ours_se": 0.001599075186619611,
+      "ours_n": 632,
+      "published": -0.01723,
+      "published_se": 0.0016,
+      "published_n": 632,
+      "match": true
+    }
+  ],
+  "ecta": [
+    {
+      "outcome": "monthly average proportion past due",
+      "regressor": "offer rate (selection)",
+      "coef": 0.004538114289130203,
+      "se": 0.0031467859942077092,
+      "p": 0.14926213568571012,
+      "n": 4348,
+      "mean_y": 0.12199411541223526
+    },
+    {
+      "outcome": "monthly average proportion past due",
+      "regressor": "contract rate (hazard)",
+      "coef": 0.0047620433554080325,
+      "se": 0.003290899826655019,
+      "p": 0.14788745096410794,
+      "n": 4348,
+      "mean_y": 0.12199411541223526
+    },
+    {
+      "outcome": "monthly average proportion past due",
+      "regressor": "dynamic incentive",
+      "coef": -0.018934175107316185,
+      "se": 0.01045292540832869,
+      "p": 0.07008271444065647,
+      "n": 4348,
+      "mean_y": 0.12199411541223526
+    },
+    {
+      "outcome": "share of months in arrears",
+      "regressor": "offer rate (selection)",
+      "coef": 0.0017304349955573179,
+      "se": 0.0034775122374925706,
+      "p": 0.6187609546867697,
+      "n": 4348,
+      "mean_y": 0.21887382864952087
+    },
+    {
+      "outcome": "share of months in arrears",
+      "regressor": "contract rate (hazard)",
+      "coef": 0.006346603243274972,
+      "se": 0.00344669686763828,
+      "p": 0.06556909668182924,
+      "n": 4348,
+      "mean_y": 0.21887382864952087
+    },
+    {
+      "outcome": "share of months in arrears",
+      "regressor": "dynamic incentive",
+      "coef": -0.027696915715840747,
+      "se": 0.010952835497624738,
+      "p": 0.011447152743043575,
+      "n": 4348,
+      "mean_y": 0.21887382864952087
+    },
+    {
+      "outcome": "account in collection",
+      "regressor": "offer rate (selection)",
+      "coef": 0.00728835836429872,
+      "se": 0.004687860743163239,
+      "p": 0.12001035451240534,
+      "n": 4348,
+      "mean_y": 0.1184452623128891
+    },
+    {
+      "outcome": "account in collection",
+      "regressor": "contract rate (hazard)",
+      "coef": 0.0012292006099536017,
+      "se": 0.004734805126389817,
+      "p": 0.7951649719926552,
+      "n": 4348,
+      "mean_y": 0.1184452623128891
+    },
+    {
+      "outcome": "account in collection",
+      "regressor": "dynamic incentive",
+      "coef": -0.02450316204443731,
+      "se": 0.011766761087112406,
+      "p": 0.03730549272869961,
+      "n": 4348,
+      "mean_y": 0.1184452623128891
+    },
+    {
+      "outcome": "summary index",
+      "regressor": "offer rate (selection)",
+      "coef": 0.014950200668051621,
+      "se": 0.011418734666239796,
+      "p": 0.19044308791431042,
+      "n": 4348,
+      "mean_y": 2.1056287380361027e-08
+    },
+    {
+      "outcome": "summary index",
+      "regressor": "contract rate (hazard)",
+      "coef": 0.014253942591796992,
+      "se": 0.011153419403262366,
+      "p": 0.20125345399932915,
+      "n": 4348,
+      "mean_y": 2.1056287380361027e-08
+    },
+    {
+      "outcome": "summary index",
+      "regressor": "dynamic incentive",
+      "coef": -0.0797260107568571,
+      "se": 0.03197365433094421,
+      "p": 0.012649388638016663,
+      "n": 4348,
+      "mean_y": 2.1056287380361027e-08
+    }
+  ],
+  "policy_values": [
+    {
+      "policy": "standard rate card",
+      "profit_per_offer": 26.285443044902152,
+      "p05": 14.681312330681509,
+      "p95": 36.78102266041981,
+      "vs_standard": 0.0,
+      "vs_standard_p05": 0.0,
+      "vs_standard_p95": 0.0,
+      "p_beats_standard": NaN
+    },
+    {
+      "policy": "experiment (random rates)",
+      "profit_per_offer": 18.078487137007315,
+      "p05": 12.951981752071799,
+      "p95": 22.617456949967483,
+      "vs_standard": -8.160345773954061,
+      "vs_standard_p05": -15.627717039747782,
+      "vs_standard_p95": -0.2850974564889997,
+      "p_beats_standard": 0.04225
+    },
+    {
+      "policy": "best rate per risk class",
+      "profit_per_offer": 26.81972647989509,
+      "p05": 17.79900321602747,
+      "p95": 36.519285535475206,
+      "vs_standard": 2.4407693235516383,
+      "vs_standard_p05": -9.208314697944642,
+      "vs_standard_p95": 9.343980404611612,
+      "p_beats_standard": 0.60825
+    },
+    {
+      "policy": "segment rules (policy tree)",
+      "profit_per_offer": 21.3579737969696,
+      "p05": 12.74602728759067,
+      "p95": 32.94959318930042,
+      "vs_standard": -3.4792175959302067,
+      "vs_standard_p05": -13.410663990420884,
+      "vs_standard_p95": 5.450701863332035,
+      "p_beats_standard": 0.29875
+    }
+  ],
+  "campaign": {
+    "offers": 50000,
+    "summary": [
+      {
+        "policy": "standard rate card",
+        "profit_p50": 1245666.2567222812,
+        "profit_p05": 610527.8013039234,
+        "profit_p95": 1887821.5476678947,
+        "p_loss": 0.00055,
+        "vs_standard_p50": 0.0,
+        "vs_standard_p05": 0.0,
+        "vs_standard_p95": 0.0,
+        "p_beats_standard": NaN
+      },
+      {
+        "policy": "experiment (random rates)",
+        "profit_p50": 846319.7973812281,
+        "profit_p05": 442088.88326057326,
+        "profit_p95": 1250747.695412385,
+        "p_loss": 0.0001,
+        "vs_standard_p50": -393639.8084770884,
+        "vs_standard_p05": -788948.7466310466,
+        "vs_standard_p95": -23849.121655633888,
+        "p_beats_standard": 0.03995
+      },
+      {
+        "policy": "best rate per risk class",
+        "profit_p50": 1271677.999171076,
+        "profit_p05": 754987.0732929292,
+        "profit_p95": 1869516.8551647896,
+        "p_loss": 5e-05,
+        "vs_standard_p50": 65831.27502005978,
+        "vs_standard_p05": -454920.80378973816,
+        "vs_standard_p95": 467150.93235616025,
+        "p_beats_standard": 0.5997
+      },
+      {
+        "policy": "segment rules (policy tree)",
+        "profit_p50": 1066657.8791394273,
+        "profit_p05": 481326.6049865248,
+        "profit_p95": 1687115.261643941,
+        "p_loss": 0.0011,
+        "vs_standard_p50": -157535.55877330445,
+        "vs_standard_p05": -668348.0249074426,
+        "vs_standard_p95": 269357.2853259742,
+        "p_beats_standard": 0.29175
+      }
+    ]
+  },
+  "tornado": [
+    {
+      "assumption": "loss_per_rand_past_due",
+      "low_value": 0.6,
+      "high_value": 1.4,
+      "advantage_at_low": -16296.729182474164,
+      "advantage_at_high": 106865.391456759,
+      "advantage_at_default": 45284.33113714242
+    },
+    {
+      "assumption": "cost_of_funds_monthly",
+      "low_value": 0.0083,
+      "high_value": 0.0167,
+      "advantage_at_low": 53023.13596079957,
+      "advantage_at_high": 37545.52631348527,
+      "advantage_at_default": 45284.33113714242
+    },
+    {
+      "assumption": "avg_balance_factor",
+      "low_value": 0.5,
+      "high_value": 0.6,
+      "advantage_at_low": 47378.163611075644,
+      "advantage_at_high": 43190.49866320922,
+      "advantage_at_default": 45284.33113714242
+    },
+    {
+      "assumption": "cost_per_loan",
+      "low_value": 0.0,
+      "high_value": 120.0,
+      "advantage_at_low": 54854.68130545471,
+      "advantage_at_high": 31885.84090150521,
+      "advantage_at_default": 45284.33113714242
+    }
+  ],
+  "rate_choice_stability": [
+    {
+      "risk": "LOW",
+      "arm": 4,
+      "share_of_splits": 0.95
+    },
+    {
+      "risk": "LOW",
+      "arm": 3,
+      "share_of_splits": 0.05
+    },
+    {
+      "risk": "MEDIUM",
+      "arm": 2,
+      "share_of_splits": 0.95
+    },
+    {
+      "risk": "MEDIUM",
+      "arm": 3,
+      "share_of_splits": 0.05
+    },
+    {
+      "risk": "HIGH",
+      "arm": 3,
+      "share_of_splits": 0.8
+    },
+    {
+      "risk": "HIGH",
+      "arm": 2,
+      "share_of_splits": 0.2
+    }
+  ],
+  "recommended_rate_card": {
+    "uniform": {
+      "LOW": {
+        "arm": 4,
+        "label": "std -1 to 0"
+      },
+      "MEDIUM": {
+        "arm": 2,
+        "label": "std -3.5 to -2"
+      },
+      "HIGH": {
+        "arm": 3,
+        "label": "std -2 to -1"
+      }
+    },
+    "trees": {
+      "LOW": "LOW: appscore <= 33 -> [if age <= 33.7467: std -2 to -1, else std -1 to 0]; above -> [if lastamount <= 1400: std -1 to 0, else std -5 to -3.5]",
+      "MEDIUM": "MEDIUM: itcscore <= 572 -> [if grossincome <= 2.8188: std -5 to -3.5, else std -3.5 to -2]; above -> [if dependants <= 2: std -3.5 to -2, else std -2 to -1]",
+      "HIGH": "HIGH: lastamount <= 1000 -> [if grossincome <= 2.94935: std -1 to 0, else std -2 to -1]; above -> [if appscore <= 27: std -2 to -1, else std -3.5 to -2]"
+    }
+  },
+  "assumptions": {
+    "loss_per_rand_past_due": 1.0,
+    "cost_of_funds_monthly": 0.0125,
+    "avg_balance_factor": 0.55,
+    "cost_per_loan": 50.0,
+    "ranges": {
+      "loss_per_rand_past_due": [
+        0.6,
+        1.4
+      ],
+      "cost_of_funds_monthly": [
+        0.0083,
+        0.0167
+      ],
+      "avg_balance_factor": [
+        0.5,
+        0.6
+      ],
+      "cost_per_loan": [
+        0.0,
+        120.0
+      ]
+    }
+  },
+  "settings": {
+    "splits": 20,
+    "bootstrap": 200,
+    "seed": 11
+  },
+  "runtime_seconds": 140.7
+}

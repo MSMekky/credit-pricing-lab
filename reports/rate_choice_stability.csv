@@ -1,0 +1,7 @@
+risk,arm,share_of_splits
+LOW,4,0.95
+LOW,3,0.05
+MEDIUM,2,0.95
+MEDIUM,3,0.05
+HIGH,3,0.8
+HIGH,2,0.2
